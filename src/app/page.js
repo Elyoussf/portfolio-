@@ -395,7 +395,7 @@ const Portfolio = () => {
           
           <div className="space-y-6 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
             <p>
-              I'm a hands-on backend developer from Morocco who loves building things that actually work. 
+              Im a hands-on backend developer from Morocco who loves building things that actually work. 
               While others debate frameworks, I'm shipping production code that scales.
             </p>
             

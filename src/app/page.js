@@ -397,18 +397,18 @@ const Portfolio = () => {
             <p>
               
               I&apos;m a hands-on backend developer from Morocco who loves building things that actually work. 
-              While others debate frameworks, I'm shipping production code that scales.
+              While others debate frameworks, I&apos;m shipping production code that scales.
             </p>
             
             <p>
-              I've been coding for 3+ years, worked with early-stage startups, and built everything from 
+              I&apos;ve been coding for 3+ years, worked with early-stage startups, and built everything from 
               real-time chat systems to 3D web experiences. My superpower? Taking complex technical problems 
               and turning them into simple, elegant solutions.
             </p>
             
             <p>
               I work async, communicate clearly, and prefer startups with technical depth over corporate bureaucracy. 
-              When I'm not coding, you'll find me exploring new tech, learning about distributed systems, 
+              When I&apos;m not coding, you&apos;ll find me exploring new tech, learning about distributed systems, 
               or probably drinking way too much coffee ☕
             </p>
           </div>
@@ -438,9 +438,9 @@ const Portfolio = () => {
       
       <section id="contact" className={`py-20 px-4 sm:px-6 lg:px-8 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-100/50'}`}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Let's Work Together</h2>
+          <h2 className="text-4xl font-bold mb-8">Let&apos;s Work Together</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-12">
-            Ready to build something amazing? I'm available for freelance projects and startup consulting.
+            Ready to build something amazing? I&apos;m available for freelance projects and startup consulting.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -461,7 +461,7 @@ const Portfolio = () => {
             <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'} border backdrop-blur-sm`}>
               <h3 className="text-2xl font-bold mb-4">Prefer Upwork?</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                I'm active on Upwork with a 5-star rating. Browse my profile and send me a message.
+                I&apos;m active on Upwork with a 5-star rating. Browse my profile and send me a message.
               </p>
               <a 
                 href="https://www.upwork.com/freelancers/~01eee137f3513a996c?mp_source=share"

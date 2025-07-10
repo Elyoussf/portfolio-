@@ -183,7 +183,7 @@ const Portfolio = () => {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
-      {/* Navigation */}
+      
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${darkMode ? 'bg-gray-900/95 backdrop-blur-md border-gray-800' : 'bg-white/95 backdrop-blur-md border-gray-200'} border-b`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -225,7 +225,7 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      
       <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -270,20 +270,7 @@ const Portfolio = () => {
                 </a>
               </div>
 
-              {/* <div className="flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-4 h-4" />
-                  <span>48hr avg response time</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Star className="w-4 h-4 text-yellow-500" />
-                  <span>5.0 rating on Upwork</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span>15+ projects completed</span>
-                </div>
-              </div> */}
+             
             </div>
 
             <div className="relative">
@@ -315,7 +302,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Featured Projects */}
+    
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -370,7 +357,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Skills */}
+      
       <section id="skills" className={`py-20 px-4 sm:px-6 lg:px-8 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-100/50'}`}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -401,48 +388,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      {/* <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">What Clients Say</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
-              Real feedback from real projects
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'} border backdrop-blur-sm transition-all duration-300 hover:scale-105`}
-              >
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
-                  ))}
-                </div>
-                
-                <blockquote className="text-lg mb-6 italic">
-                  "{testimonial.text}"
-                </blockquote>
-                
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
-                    {testimonial.author.charAt(0)}
-                  </div>
-                  <div>
-                    <div className="font-semibold">{testimonial.author}</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* About Me */}
+      
       <section id="about" className={`py-20 px-4 sm:px-6 lg:px-8 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-100/50'}`}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
@@ -475,14 +421,7 @@ const Portfolio = () => {
             >
               <Github className="w-6 h-6" />
             </a>
-            {/* <a 
-              href="https://linkedin.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-colors"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a> */}
+            
             <a 
               href="https://twitter.com/helyoussfii" 
               target="_blank"
@@ -495,54 +434,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Blog Preview */}
-      {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Latest Thoughts</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
-              Insights from building real systems
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
-              <article 
-                key={index}
-                className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'} border backdrop-blur-sm transition-all duration-300 hover:scale-105 group cursor-pointer`}
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-                    {post.category}
-                  </span>
-                  <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
-                </div>
-                
-                <h3 className="text-xl font-bold mb-3 group-hover:text-blue-500 transition-colors">
-                  {post.title}
-                </h3>
-                
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
-                  {post.excerpt}
-                </p>
-                
-                <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-                  <div className="flex items-center space-x-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>{post.date}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <BookOpen className="w-4 h-4" />
-                    <span>{post.readTime}</span>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Contact */}
+      
       <section id="contact" className={`py-20 px-4 sm:px-6 lg:px-8 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-100/50'}`}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">Let's Work Together</h2>
@@ -583,48 +475,7 @@ const Portfolio = () => {
           </div>
            </div>
           </section>
-          {/* Contact Form */}
-          {/* <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800/50 border-gray-700' : 'bg-white border-gray-200'} border backdrop-blur-sm`}>
-            <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <input 
-                  type="text"
-                  placeholder="Your Name"
-                  className={`w-full px-4 py-3 rounded-lg border ${darkMode ? 'bg-gray-800 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300 text-gray-900 placeholder-gray-500'} focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all`}
-                />
-                <input 
-                  type="email"
-                  placeholder="Your Email"
-                  className={`w-full px-4 py-3 rounded-lg border ${darkMode ? 'bg-gray-800 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300 text-gray-900 placeholder-gray-500'} focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all`}
-                />
-              </div>
-              
-              <input 
-                type="text"
-                placeholder="Project Budget (e.g., $5,000 - $10,000)"
-                className={`w-full px-4 py-3 rounded-lg border ${darkMode ? 'bg-gray-800 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300 text-gray-900 placeholder-gray-500'} focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all`}
-              />
-              
-              <textarea 
-                rows="5"
-                placeholder="Tell me about your project. What are you building? What's your timeline? Any specific technical requirements?"
-                className={`w-full px-4 py-3 rounded-lg border ${darkMode ? 'bg-gray-800 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300 text-gray-900 placeholder-gray-500'} focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none`}
-              ></textarea>
-              
-              <button 
-                type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 hover:scale-105 flex items-center justify-center space-x-2"
-              >
-                <Send className="w-5 h-5" />
-                <span>Send Message</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Footer */}
+          
       <footer className={`py-12 px-4 sm:px-6 lg:px-8 border-t ${darkMode ? 'border-gray-800 bg-gray-900/50' : 'border-gray-200 bg-white/50'}`}>
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
@@ -671,14 +522,7 @@ const Portfolio = () => {
                 >
                   <Github className="w-5 h-5" />
                 </a>
-                {/* <a 
-                  href="https://linkedin.com" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a> */}
+               
                 <a 
                   href="https://twitter.com/helyoussfii" 
                   target="_blank"
